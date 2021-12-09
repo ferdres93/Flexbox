@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+header {
+    padding: 2rem;
+    background: linear-gradient(85deg,#2e2e2e,#111111);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(85deg,#474747,#242424);
+    margin-bottom: 5rem;
+}
+
+nav a{
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.cards {
+    padding: 2rem;
+
+}
+
+.card {
+    margin: 1.5rem;
+    /*background-color: #000000;*/
+    background: linear-gradient(85deg,#2e2e2e,#111111);
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: white;
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.61);
+    max-width: 25rem;
+    min-height: 7rem 
+}
+
+.card:hover {
+ transform: translateX(1rem);
+ transition: 1s;
+}
+
+footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(85deg,#474747,#242424);
+    color: white;
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 60rem){
+    .cards {
+        display: flex;
+    }
+
+    .card {
+        flex-basis: 100%;
+        max-width: 12rem;
+    }
+
+    nav a {
+        font-size: 1rem;  }
+
+    .card:hover {
+            transform: translateY(-1rem);
+            transition: 1s;
+           }
+}
